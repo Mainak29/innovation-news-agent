@@ -22,6 +22,6 @@ This automation agent researches innovation news daily, summarizes with Groq LLM
 5. Deploy on GitHub Actions (schedule at 09:00 IST).
 
 ## ⚡ Switching LLM Providers
-- Default = Groq (`openai/gpt-oss-20b`)
+- Default = Groq (`llama-3-8b-instant`)
 - You can also set `.env` to `ollama` or `openai`.
 
