@@ -1,0 +1,5 @@
+# Env files
+.env
+
+# Output drafts
+/out/
