@@ -21,7 +21,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run agent
-        run: python -m src.run
+        run: |
+          export PYTHONPATH="${{ github.workspace }}"
+          python -m src.run
         env:
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
           SENDER_APP_PASSWORD: ${{ secrets.SENDER_APP_PASSWORD }}
