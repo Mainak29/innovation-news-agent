@@ -1,5 +1,5 @@
 import datetime, os
-from config import FEEDS, KEYWORDS, DRY_RUN
+from src.config import FEEDS, KEYWORDS, DRY_RUN
 from feeds import fetch_articles
 from summarizer import summarize
 from email_functionality import send_email
